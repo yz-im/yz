@@ -24,7 +24,7 @@ func NewServerStartCmd(ctx context.Context, version string) *cobra.Command {
 		},
 	}
 	cmd.PersistentFlags().StringVarP(&opts.id, "serverid", "i", "demo", "server id")
-	cmd.PersistentFlags().StringVarP(&opts.listen, "listen", "l", ":8080", "listen address")
+	cmd.PersistentFlags().StringVarP(&opts.listen, "listen", "l", ":8000", "listen address")
 	return cmd
 }
 
